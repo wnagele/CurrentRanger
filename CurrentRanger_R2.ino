@@ -103,7 +103,7 @@ Adafruit_FreeTouch qt[3] = {
 int offsetCorrectionValue = 0;
 uint16_t gainCorrectionValue = 0;
 float ldoValue = 0;
-uint16_t AUTOFF_INTERVAL = 0;
+uint32_t AUTOFF_INTERVAL = 0;
 uint8_t USB_LOGGING_ENABLED = false;
 uint8_t BT_LOGGING_ENABLED = true;
 byte calibrationPerformed=false;
@@ -342,7 +342,7 @@ void loop()
         if (AUTOFF_INTERVAL == AUTOFF_DEFAULT)
         {
           Serial.println("AUTO_OFF_DISABLED");
-          AUTOFF_INTERVAL = 0xFFFF;
+          AUTOFF_INTERVAL = 0xFFFFFF;
         }
         else
         {
