@@ -366,7 +366,7 @@ void loop()
     if (readDiff <= RANGE_SWITCH_THRESHOLD_LOW)
     {
       if      (RANGE_MA) { rangeUA(); rangeSwitched=true; rangeBeep(SWITCHDELAY_DOWN); }
-      else if (RANGE_UA) { rangeNA(); rangeSwitched=true; rangeBeep(SWITCHDELAY_DOWN); }
+      //else if (RANGE_UA) { rangeNA(); rangeSwitched=true; rangeBeep(SWITCHDELAY_DOWN); }
     }
     else if (readDiff >= RANGE_SWITCH_THRESHOLD_HIGH)
     {
