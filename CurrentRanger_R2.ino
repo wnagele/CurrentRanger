@@ -46,9 +46,9 @@ uint32_t lastRangeChange=0;
 //***********************************************************************************************************
 #define ADC_CALIBRATE_EN
 #define ADC_CALIBRATE_FORCED          //uncomment to set manual offset/gain values below
-#define ADC_CALIBRATE_FORCED_OFFSET 0
-#define ADC_CALIBRATE_FORCED_GAIN   2048
-#define LDO_OUTPUT                  3.300 //volts, change to actual LDO output (measure GND-3V on OLED header)
+#define ADC_CALIBRATE_FORCED_OFFSET 15
+#define ADC_CALIBRATE_FORCED_GAIN   2056
+#define LDO_OUTPUT                  3.311 //volts, change to actual LDO output (measure GND-3V on OLED header)
 #define ANALOG_REFERENCE            AR_DEFAULT //AR_EXTERNAL
 //***********************************************************************************************************
 #define BUZZER     1           // BUZZER pin
